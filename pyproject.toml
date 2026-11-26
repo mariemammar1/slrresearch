@@ -1,0 +1,20 @@
+
+[project]
+name = "slrresearchai"
+version = "0.1.0"
+description = "A controlled multi-agent platform for systematic literature reviews"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0",
+    "python-dotenv>=1.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v"
